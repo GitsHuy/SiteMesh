@@ -7,7 +7,7 @@
     <persistence-unit name="my-persistence-unit"> <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
             
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlserver://DESKTOP-DJ03I8E;instanceName=HUYRO;databaseName=User_LTWeb;encrypt=true;trustServerCertificate=true;" />
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlserver://DESKTOP-DJ03I8E:1433;instanceName=HUYRO;databaseName=User_LTWeb;encrypt=true;trustServerCertificate=true;" />
             
             <property name="jakarta.persistence.jdbc.user" value="sa" />
             <property name="jakarta.persistence.jdbc.password" value="31121124" />

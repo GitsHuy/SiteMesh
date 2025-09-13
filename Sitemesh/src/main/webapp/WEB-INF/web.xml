@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	version="6.0">
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<filter>
+		<filter-name>sitemesh</filter-name>
+		<filter-class>com.bai4.filter.SiteMeshFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>sitemesh</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+
+	<welcome-file-list>
+		<welcome-file>views/profile.jsp</welcome-file>
+		<welcome-file>views/home.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
